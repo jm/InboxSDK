@@ -1967,6 +1967,7 @@ class GmailComposeView implements ComposeViewDriver {
   }
 
   setLastSelectionRange(lastSelectionRange: Range | null | undefined) {
+    window._lastSelectionRange = lastSelectionRange;
     this._lastSelectionRange = lastSelectionRange;
   }
 
